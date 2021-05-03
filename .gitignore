@@ -1,0 +1,5 @@
+# Dist folder
+/build
+
+# Dependencies
+/node_modules
