@@ -15,6 +15,8 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@types/cors": "^2.8.10",
+        "@types/morgan": "^1.9.2",
         "@types/node": "^15.0.1",
         "@typescript-eslint/eslint-plugin": "^4.22.0",
         "@typescript-eslint/parser": "^4.22.0",
@@ -28,8 +30,12 @@
         "typescript": "^4.2.4"
     },
     "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
         "dotenv": "^8.2.0",
         "express": "^4.17.1",
-        "express-async-errors": "^3.1.1"
+        "express-async-errors": "^3.1.1",
+        "express-json-validator-middleware": "^2.1.1",
+        "morgan": "^1.10.0"
     }
 }
