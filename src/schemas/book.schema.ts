@@ -2,17 +2,17 @@ const BookSchema: any = {
     type: 'object',
     required: ['name', 'author', 'description'],
     properties: {
-        bookName: {
+        name: {
             type: 'string',
             description: 'Name of the book'
         },
-        bookAuthor: {
+        author: {
             type: 'string',
             description: 'Author of the book'
         },
-        bookDescription: {
+        description: {
             type: 'string',
-            description: 'Description of the book'
+            description: 'Detailed description of the book'
         }
     }
 };
