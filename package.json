@@ -38,6 +38,7 @@
         "express-async-errors": "^3.1.1",
         "express-json-validator-middleware": "^2.1.1",
         "morgan": "^1.10.0",
+        "nanoid": "^3.1.22",
         "pouchdb": "^7.2.2"
     }
 }
