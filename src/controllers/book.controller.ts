@@ -1,12 +1,12 @@
 import { Request, Response } from 'express';
-import { createBookDocument } from '../models/book.model';
+import { createBookDocument, findBookDocument } from '../models/book.model';
 import Book from '../types/book';
 import { ResJSON, ResStatus } from '../types/resjson';
 
 export const createNewBook = async (
     req: Request,
     res: Response
-): Promise<void> => {
+): Promise<unknown> => {
     const book: Book = req.body;
     const payload: PouchDB.Core.Response = await createBookDocument(book);
 
@@ -16,9 +16,33 @@ export const createNewBook = async (
         body: [payload]
     };
 
-    res.status(200).json(response);
+    return res.status(200).json(response);
 };
 
-export const findAllBooks = (req: Request, res: Response): void => {};
+export const findOneBook = async (
+    req: Request,
+    res: Response
+): Promise<unknown> => {
+    const bookId: string = req.params.book_id;
+    const payload: Book | undefined = await findBookDocument(bookId);
 
-export const findOneBook = (bookId: number): void => {};
+    let response: ResJSON;
+
+    if (payload === undefined) {
+        response = {
+            status: ResStatus.Fail,
+            message: `This book hasn't been registered`,
+            body: []
+        };
+
+        return res.status(404).json(response);
+    }
+
+    response = {
+        status: ResStatus.Success,
+        message: `Found a book document with id ${bookId} succesfully`,
+        body: [payload]
+    };
+
+    return res.status(200).json(response);
+};
