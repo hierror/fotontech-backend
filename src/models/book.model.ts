@@ -1,6 +1,6 @@
-import Book from '../types/book';
+import { Book, Books } from '../types/book';
 import db from '../db';
-import id from '../utils/ids';
+import id from '../utils/nanoid';
 
 export const createBookDocument = async (
     book: Book
@@ -20,6 +20,34 @@ export const createBookDocument = async (
     }
 
     return response;
+};
+
+export const findAllBooksDocuments = async (): Promise<Books | []> => {
+    let response: PouchDB.Find.FindResponse<Record<string, unknown>>;
+    let books: Books;
+
+    try {
+        const options: PouchDB.Find.FindRequest<Record<string, unknown>> = {
+            selector: {
+                name: { $gte: null }
+            },
+            fields: ['_id', 'name', 'author', 'description'],
+            sort: ['name']
+        };
+
+        response = await db.find(options);
+
+        // Unfortunately, I need to typecast the response to unknown before typecasting to an array of Books
+        books = <Books>(<unknown>response.docs);
+    } catch (err) {
+        console.log(err);
+
+        throw new Error(
+            `Couldn't retrieve all the books in the database due to error`
+        );
+    }
+
+    return books;
 };
 
 export const findBookDocument = async (

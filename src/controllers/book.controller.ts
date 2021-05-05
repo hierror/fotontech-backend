@@ -1,6 +1,10 @@
 import { Request, Response } from 'express';
-import { createBookDocument, findBookDocument } from '../models/book.model';
-import Book from '../types/book';
+import {
+    createBookDocument,
+    findAllBooksDocuments,
+    findBookDocument
+} from '../models/book.model';
+import { Book, Books } from '../types/book';
 import { ResJSON, ResStatus } from '../types/resjson';
 
 export const createNewBook = async (
@@ -14,6 +18,33 @@ export const createNewBook = async (
         status: ResStatus.Success,
         message: 'Created a new book document succesfully',
         body: [payload]
+    };
+
+    return res.status(200).json(response);
+};
+
+export const findAllBooks = async (
+    req: Request,
+    res: Response
+): Promise<unknown> => {
+    const payload: Books | [] = await findAllBooksDocuments();
+
+    let response: ResJSON;
+
+    if (payload.length === 0) {
+        response = {
+            status: ResStatus.Fail,
+            message: `There isn't any book registered on the database`,
+            body: []
+        };
+
+        return res.status(404).json(response);
+    }
+
+    response = {
+        status: ResStatus.Success,
+        message: `Found all books successfully`,
+        body: [...payload]
     };
 
     return res.status(200).json(response);

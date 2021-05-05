@@ -2,13 +2,20 @@ import { NextFunction, Request, Response, Router } from 'express';
 import { ValidationError, Validator } from 'express-json-validator-middleware';
 import { ResJSON, ResStatus } from './types/resjson';
 import BookSchema from './schemas/book.schema';
-import { createNewBook, findOneBook } from './controllers/book.controller';
+import {
+    createNewBook,
+    findAllBooks,
+    findOneBook
+} from './controllers/book.controller';
 
 const { validate } = new Validator({ allErrors: true });
 
 const router = Router();
 
-router.route('/books').post(validate({ body: BookSchema }), createNewBook);
+router
+    .route('/books')
+    .get(findAllBooks)
+    .post(validate({ body: BookSchema }), createNewBook);
 
 router.route('/books/:book_id').get(findOneBook);
 
