@@ -1,0 +1,186 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API Rest Documentation - Foton Tech Backend Challenge",
+        "description": "This is the endpoints documentation for the API Rest",
+        "version": "1.0.0",
+        "contact": {
+            "email": "hierrodscherer@gmail.com"
+        }
+    },
+    "servers": [{ "url": "http://localhost:3000/api" }],
+    "tags": [{ "name": "Books", "description": "Management of the books" }],
+    "paths": {
+        "/books": {
+            "get": {
+                "summary": "Find all the books",
+                "tags": ["Books"],
+                "description": "Finds every book registered on the database",
+                "produces": ["application/json"],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Retrieved all books succesfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Response"
+                                },
+                                "examples": {
+                                    "Default": {
+                                        "summary": "Default",
+                                        "value": {
+                                            "status": "success",
+                                            "message": "Found all books successfully",
+                                            "body": [
+                                                {
+                                                    "_id": "UVQZSYPCL0LNOJ",
+                                                    "name": "1984",
+                                                    "author": "George Orwell",
+                                                    "description": "Although 1984 has passed us by, George Orwell’s dystopian, totalitarian world of control, fear and lies has never been more relevant. Delve into the life of Winston Smith as he struggles with his developing human nature in a world where individuality, freewill and love are forbidden."
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Create new book",
+                "tags": ["Books"],
+                "description": "Register a new book in the database",
+                "produces": ["application/json"],
+                "parameters": [],
+                "requestBody": {
+                    "description": "Properties of a new book",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Book"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Retrieved all books succesfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Response"
+                                },
+                                "examples": {
+                                    "Default": {
+                                        "summary": "Default",
+                                        "value": {
+                                            "status": "success",
+                                            "message": "Found all books successfully",
+                                            "body": [
+                                                {
+                                                    "_id": "UVQZSYPCL0LNOJ",
+                                                    "name": "1984",
+                                                    "author": "George Orwell",
+                                                    "description": "Although 1984 has passed us by, George Orwell’s dystopian, totalitarian world of control, fear and lies has never been more relevant. Delve into the life of Winston Smith as he struggles with his developing human nature in a world where individuality, freewill and love are forbidden."
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/books/{book_id}": {
+            "get": {
+                "summary": "Find one book",
+                "tags": ["Books"],
+                "description": "Finds one book in the database through its id",
+                "produces": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "book_id",
+                        "in": "path",
+                        "description": "Id of the book that is being searched",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Retrieved all books succesfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Response"
+                                },
+                                "examples": {
+                                    "Default": {
+                                        "summary": "Default",
+                                        "value": {
+                                            "status": "success",
+                                            "message": "Found a book document with id BOOK_ID succesfully",
+                                            "body": [
+                                                {
+                                                    "_id": "UVQZSYPCL0LNOJ",
+                                                    "name": "1984",
+                                                    "author": "George Orwell",
+                                                    "description": "Although 1984 has passed us by, George Orwell’s dystopian, totalitarian world of control, fear and lies has never been more relevant. Delve into the life of Winston Smith as he struggles with his developing human nature in a world where individuality, freewill and love are forbidden."
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Book": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Title of the book"
+                    },
+                    "author": {
+                        "type": "string",
+                        "description": "Author of the book"
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "Detailed description of the book"
+                    }
+                }
+            },
+            "Response": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string",
+                        "enum": ["success", "fail", "error"],
+                        "description": "Status of the request"
+                    },
+                    "message": {
+                        "type": "string",
+                        "description": "Message informing what happened during the execution"
+                    },
+                    "body": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
