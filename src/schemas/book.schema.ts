@@ -6,7 +6,7 @@ const BookSchema: JSONSchema4 = {
     properties: {
         name: {
             type: 'string',
-            description: 'Name of the book',
+            description: 'Title of the book',
             minLength: 1
         },
         author: {
