@@ -1,6 +1,7 @@
-import { JSONSchema4 } from 'json-schema';
+import { Schema } from 'jsonschema';
 
-const BookSchema: JSONSchema4 = {
+const BookSchema: Schema = {
+    id: '/BookSchema',
     type: 'object',
     required: ['name', 'author', 'description'],
     properties: {
