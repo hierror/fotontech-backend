@@ -43,8 +43,8 @@ npm run start:dev
 
 👤 **Hierro Duarte <hierror>**
 
--   Twitter: [@hierror404](https://twitter.com/hierror404)
--   Github: [@hierror](https://github.com/hierror)
+- Twitter: [@hierror404](https://twitter.com/hierror404)
+- Github: [@hierror](https://github.com/hierror)
 
 ## Thoughts about the project
 

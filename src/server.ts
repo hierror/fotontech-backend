@@ -20,9 +20,9 @@ app.use('/docs', SwaggerUIExpress.serve, SwaggerUIExpress.setup(SwaggerConfig));
 app.use('/api', router);
 
 export const start = (): void => {
-    const port = process.env.PORT;
+  const port = process.env.PORT;
 
-    app.listen(port, () => {
-        console.log('Server running on port', port);
-    });
+  app.listen(port, () => {
+    console.log('Server running on port', port);
+  });
 };
