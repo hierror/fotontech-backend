@@ -37,7 +37,7 @@ npm run start:dev
 
 ## Documentation
 
-Swagger is used to structure and deploy the documentation easily. To access the docs., go to the `/docs` endpoint of your server after starting it.
+[Swagger](https://swagger.io/) is used to structure and deploy the documentation easily. To access the docs., go to the `/docs` endpoint of your server after starting it.
 
 ## Author
 
