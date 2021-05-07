@@ -11,6 +11,7 @@ export const createBookDocument = async (
     const document: Book = {
       _id: id(),
       ...book,
+      img: '',
       createdAt: new Date().toISOString()
     };
 
@@ -31,7 +32,7 @@ export const findAllBooksDocuments = async (): Promise<Books | []> => {
       selector: {
         name: { $gte: null }
       },
-      fields: ['_id', 'name', 'author', 'description'],
+      fields: ['_id', 'name', 'author', 'description', 'img'],
       sort: ['name']
     };
 
@@ -63,7 +64,8 @@ export const findBookDocument = async (
       _id: response._id,
       name: response.name,
       author: response.author,
-      description: response.description
+      description: response.description,
+      img: response.img
     };
   } catch (err) {
     if (err.reason === 'missing') {

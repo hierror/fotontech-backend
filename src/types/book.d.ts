@@ -3,6 +3,7 @@ export interface Book {
   name: string;
   author: string;
   description: string;
+  img?: string;
   createdAt?: string;
 }
 
