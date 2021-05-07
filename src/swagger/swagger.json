@@ -8,7 +8,7 @@
       "email": "hierrodscherer@gmail.com"
     }
   },
-  "servers": [{ "url": "http://localhost:3000/api" }],
+  "servers": [{ "url": "http://localhost:3001/api" }],
   "tags": [{ "name": "Books", "description": "Management of the books" }],
   "paths": {
     "/books": {
