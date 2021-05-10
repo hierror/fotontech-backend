@@ -39,6 +39,12 @@ npm run start:dev
 
 [Swagger](https://swagger.io/) is used to structure and deploy the documentation easily. To access the docs., go to the `/docs` endpoint of your server after starting it.
 
+## Built with
+
+- Express
+- Typescript
+- PouchDB
+
 ## Author
 
 👤 **Hierro Duarte <hierror>**
