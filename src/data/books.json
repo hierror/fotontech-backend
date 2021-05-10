@@ -1,65 +1,65 @@
 [
   {
     "_id": "DZWM9FJDEZBBAO",
-    "name": "To Kill a Mockingbird",
-    "author": "Harper Lee",
-    "description": "Published in 1960, this timeless classic explores human behaviour and the collective conscience of The Deep South in the early 20th century. Humour entwines the delicate strands of prejudice, hatred, hypocrisy, love and innocence to create one of the best novels ever written.",
-    "img": "tkam.jpg"
+    "name": "O fio das missangas",
+    "author": "Mia Couto",
+    "description": "\"A missanga, todos a veem. Ninguém nota o fio que, em colar vistoso, vai compondo as missangas. Também assim é a voz do poeta: um fio de silêncio costurando o tempo.\" \"A vida é um colar. Eu dou o fio, as mulheres dão as missangas. São sempre tantas as missangas.\" É assim que o donjuanesco personagem do conto \"O fio e as missangas\" define a sua existência. Fazendo jus a essa delicada metáfora, cada uma das 29 histórias aqui agrupadas alia sua carga poética singular à forma abrangente do livro como um todo - vale dizer, ao colar em questão.",
+    "img": "ofdm.jpg"
   },
   {
     "_id": "UVQZSYPCL0LNOJ",
-    "name": "1984",
-    "author": "George Orwell",
-    "description": "Although 1984 has passed us by, George Orwell’s dystopian, totalitarian world of control, fear and lies has never been more relevant. Delve into the life of Winston Smith as he struggles with his developing human nature in a world where individuality, freewill and love are forbidden.",
-    "img": "1984.jpg"
+    "name": "Livro do desassossego",
+    "author": "Fernando Pessoa",
+    "description": "Os fragmentos que compõem esta complexa obra representam a inquietude, os sentimentos, as dúvidas e o amplo conhecimento de mundo daquele que segurava a caneta para escrever tão profundas palavras e ao fim assinar sob o heterônimo de Bernardo Soares. Escrita em forma de diário, Livro do Desassossego é a obra de Fernando Pessoa que mais se assemelha a um romance, revelando os mais íntimos pensamentos e impressões do autor.",
+    "img": "ldd.jpg"
   },
   {
     "_id": "UFXYH9QO852SHML",
-    "name": "Harry Potter and the Philosopher’s Stone",
-    "author": "J.K. Rowling",
-    "description": "I’m willing to bet you’ve heard of Harry Potter, but have you read the books? Join Harry Potter as he begins his journey into the world of magic, where he is the celebrated Boy Who Lived. Visit Hogwarts, meet your favourite characters and watch Harry grow into the one of the most famous literary characters in the world.",
-    "img": "hpps.jpg"
+    "name": "A Revolução dos Bichos",
+    "author": "George Orwell",
+    "description": "Publicado em 1945, A revolução dos bichos alçou o posto de um dos maiores clássicos da literatura moderna e projetou seu autor, George Orwell, como um dos mais influentes da história. Esta é uma fábula atual, que satiriza o totalitarismo, a tirania e a busca pelo poder. Mais de sessenta anos depois de escrita, a obra mantém o vigor inabalável de uma alegoria sobre as fraquezas humanas que podem levar à derrocada das grandes revoluções políticas.",
+    "img": "ardb.jpg"
   },
   {
     "_id": "LYI0L162OIG5LY",
-    "name": "The Lord of the Rings",
-    "author": "J.R.R. Tolkien",
-    "description": "Middle Earth is a wonderful, expansive fantasy world filled with turmoil, heroes, evil and innocence. Although our protagonist Frodo Baggins’ quest seems impossible to complete, this trilogy is a tale of triumph in the most impossible circumstances.",
-    "img": "tlor.jpg"
+    "name": "Flores para Algernon",
+    "author": "Daniel Keyes",
+    "description": "Publicado originalmente em 1966, Flores para Algernon foi o grande expoente da carreira do escritor, ganhador do prêmio Nebula e inspiração para o filme Os Dois Mundos de Charly (1968) – que garantiu a Cliff Robertson o Oscar de Melhor Ator. E com mais de 5 milhões de exemplares vendidos e referência dentro das escolas dos Estados Unidos, a obra surgiu sobre as palavras de um homem de 32 anos e 68 de QI: Charlie Gordon.",
+    "img": "fpa.jpg"
   },
   {
     "_id": "6853TLZE7AYRRY",
-    "name": "The Great Gatsby",
-    "author": "F. Scott Fitzgerald",
-    "description": "Published in 1925, Fitzgerald’s The Great Gatsby explores the decadence of the Jazz Age, and one man’s introduction into a world where even those with the most indulgent lives cannot earn love.",
-    "img": "tgg.jpg"
+    "name": "Conectadas",
+    "author": "Clara Alves",
+    "description": "Raíssa e Ayla se conheceram jogando Feéricos, um dos games mais populares do momento, e não se desgrudaram mais ― pelo menos virtualmente. Ayla sente que, com Raíssa, finalmente pode ser ela mesma. Raíssa, por sua vez, encontra em Ayla uma conexão que nunca teve com ninguém. Só tem um “pequeno” problema: Raíssa joga com um avatar masculino, então Ayla não sabe que está conversando com outra menina. Em um fim de semana repleto de cosplays, confidências e corações partidos, será que esse romance on-line conseguirá sobreviver à vida real?",
+    "img": "c.jpg"
   },
   {
     "_id": "CE0Z0CP3DP47XL",
-    "name": "Pride and Prejudice",
-    "author": "Jane Austen",
-    "description": "One of the most famous novels of all time, Pride And Prejudice details the courtship of two opposed characters in a world where manners and courtesy are of the utmost importance. ",
-    "img": "pp.jpg"
+    "name": "Caviar é uma ova",
+    "author": "Gregorio Duvivier",
+    "description": "Caviar é uma ova reúne as melhores e mais interessantes crônicas publicadas por Gregorio Duvivier, um dos autores mais inventivos do Brasil na atualidade. Gregorio é ao mesmo tempo ator, roteirista, comediante, cronista e poeta, e este livro é uma versão impressa da multiplicidade única do autor. Transitando entre ficções, memórias de infância, artigos de opinião, militância política e exercícios de estilo, o conjunto final acaba marcado pela agudeza crítica. Em pouco tempo, Gregorio se transformou numa das vozes mais ativas da esquerda brasileira, tornando-se referência por conta de sua combatividade generosa, em que a inteligência é a principal arma.",
+    "img": "ceuo.jpg"
   },
   {
     "_id": "UND556TSL10HRG",
-    "name": "The Diary Of A Young Girl",
-    "author": "Anne Frank",
-    "description": "Unforgettable and deeply influential, Anne Frank’s diary is a raw account of a young girl’s life as she hides from the Nazis. Despite her circumstances, Anne believes that people are still good at heart and that the world is full of beauty: she will change your life.",
-    "img": "af.jpg"
+    "name": "Pequeno manual antirracista",
+    "author": "Djamila Ribeiro",
+    "description": "Neste pequeno manual, a filósofa e ativista Djamila Ribeiro trata de temas como atualidade do racismo, negritude, branquitude, violência racial, cultura, desejos e afetos. Em onze capítulos curtos e contundentes, a autora apresenta caminhos de reflexão para aqueles que queiram aprofundar sua percepção sobre discriminações racistas estruturais e assumir a responsabilidade pela transformação do estado das coisas. Já há muitos anos se solidifica a percepção de que o racismo está arraigado em nossa sociedade, criando desigualdades e abismos sociais: trata-se de um sistema de opressão que nega direitos, e não um simples ato de vontade de um sujeito. Reconhecer as raízes e o impacto do racismo pode ser paralisante. Afinal, como enfrentar um monstro desse tamanho? Djamila Ribeiro argumenta que a prática antirracista é urgente e se dá nas atitudes mais cotidianas. E mais ainda: é uma luta de todas e todos.",
+    "img": "pma.jpg"
   },
   {
     "_id": "9DPA1XUFC67P0N",
-    "name": "The Book Thief",
-    "author": "Markus Zusak",
-    "description": "Set in Germany during 1939, The Book Thief follows Liesel as she rescues books from the tyranny of Nazi rule. Meanwhile, her family has hidden a Jewish fighter in their basement and death looks down on the family, narrating our tale. Experience bravery that is rarely found in the world, and friendship that is formed in the most unlikely of situations.",
-    "img": "tbf.jpg"
+    "name": "Torto arado",
+    "author": "Itamar Vieira Junior",
+    "description": "Nas profundezas do sertão baiano, as irmãs Bibiana e Belonísia encontram uma velha e misteriosa faca na mala guardada sob a cama da avó. Ocorre então um acidente. E para sempre suas vidas estarão ligadas ― a ponto de uma precisar ser a voz da outra. Numa trama conduzida com maestria e com uma prosa melodiosa, o romance conta uma história de vida e morte, de combate e redenção.",
+    "img": "ta.jpg"
   },
   {
     "_id": "DYIWPYJHWW4TNH",
-    "name": "Little Women",
-    "author": "Louisa May Alcott",
-    "description": "Join four sisters, each with their own prominent personality, as they come of age in charming 19th Century New England. Experience their struggles and revel in their flaws, as these girls become strong women.",
-    "img": "lw.jpg"
+    "name": "O poder do hábito",
+    "author": "Charles Duhigg",
+    "description": "O poder do hábito explora diversos estudos para entender como a formação de hábitos funciona. Com certeza, é uma leitura que vale muito a pena, principalmente por explicar, com embasamento científico, como funciona a mudança de hábitos.",
+    "img": "opdh.jpg"
   }
 ]
