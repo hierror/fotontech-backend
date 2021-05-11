@@ -11,6 +11,16 @@
 
 > This is the repository for the backend project of the Fullstack Challenge. It represents an API Rest that manages a library, being able to create new books and searching them.
 
+## Accessing the server
+
+To use the API Rest, you can host the server yourself or hit the endpoints on the IP below. If you use [Insomnia](https://insomnia.rest/download), the repository contains the Collection used in tests.
+
+`http://177.71.228.129:3001/api`
+
+The Swagger doc. of the endpoints can be found at:
+
+`http://177.71.228.129:3001/docs`
+
 ## Installation and configuration
 
 Use [npm](https://www.npmjs.com/) to install all the project dependencies.
@@ -44,6 +54,11 @@ npm run start:dev
 - Express
 - Typescript
 - PouchDB
+- JSONSchema
+- Express Async Errors
+- Morgan
+- Nanoid
+- Dotenv
 
 ## Author
 
