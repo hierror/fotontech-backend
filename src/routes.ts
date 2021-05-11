@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response, Router } from 'express';
 import { ValidationError } from 'jsonschema';
-import { ResJSON, ResStatus } from './types/resjson';
+import { ResJSON, ResStatus } from './types/ResJSON';
 import { validateBook } from './utils/validators';
 import {
   createNewBook,

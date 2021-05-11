@@ -4,8 +4,8 @@ import {
   findAllBooksDocuments,
   findBookDocument
 } from '../models/book.model';
-import { Book, Books } from '../types/book';
-import { ResJSON, ResStatus } from '../types/resjson';
+import { Book, Books } from '../types/Book';
+import { ResJSON, ResStatus } from '../types/ResJSON';
 
 export const createNewBook = async (
   req: Request,

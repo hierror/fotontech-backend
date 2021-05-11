@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from 'express';
 import BookSchema from '../schemas/book.schema';
 import { validate } from 'jsonschema';
-import { Book } from '../types/book';
+import { Book } from '../types/Book';
 
 export const validateBook = (
   req: Request,

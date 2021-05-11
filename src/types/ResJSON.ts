@@ -7,5 +7,5 @@ export const enum ResStatus {
 export interface ResJSON {
   status: ResStatus;
   message: string;
-  body?: Array;
+  body?: Array<any>;
 }
