@@ -2,7 +2,6 @@ import * as express from 'express';
 import * as cors from 'cors';
 import * as morgan from 'morgan';
 import { json, urlencoded } from 'body-parser';
-import * as SwaggerJSDoc from 'swagger-jsdoc';
 import * as SwaggerUIExpress from 'swagger-ui-express';
 import * as SwaggerConfig from './swagger/swagger.json';
 import router from './routes';

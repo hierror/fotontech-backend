@@ -1,4 +1,4 @@
-import { Book, Books } from '../types/book';
+import { Book, Books } from '../types/Book';
 import db from '../db';
 import id from '../utils/nanoid';
 
